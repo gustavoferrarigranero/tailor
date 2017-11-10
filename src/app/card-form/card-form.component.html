@@ -1,0 +1,4 @@
+<form #heroForm="ngForm" (ngSubmit)="onSubmit()" class="form">
+  <textarea id="name" required [(ngModel)]="model.name" name="name" rows="3" placeholder="Digite um novo card..."></textarea>
+  <button type="submit">Salvar</button>
+</form>

@@ -1,0 +1,62 @@
+$color-one: #0A1829;
+$color-two: #588E95;
+$color-three: #7FADA9;
+$color-four: #CCD9CE;
+$radius: 2px;
+
+.content{
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  overflow-x:  auto;
+  overflow-y:  hidden;
+  white-space: nowrap;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: row;
+  .item{
+    .columns{
+    width: 270px;
+    margin: 0 5px;
+    background: $color-four;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: calc(100% - 10px);
+    position: relative;
+    white-space: normal;
+    overflow: hidden;
+    .title{
+      height: 35px;
+      line-height: 40px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $color-one;
+      font-size: 1.2rem;
+      padding: 0 10px;
+      z-index: 2;
+      cursor: pointer;
+    }
+    .list{
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin: 35px 0 10px 0;
+      z-index: 1;
+      min-height: 0;
+    }
+  }
+  }
+}
