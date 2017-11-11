@@ -2,23 +2,22 @@
   <h1>Tailor</h1>
 </header>
 <div id="app">
-    <ol class="content fancy-scrollbar">
-      <li class="item" *ngFor="let list of lists">
+    <div id="content" class="content fancy-scrollbar">
+      <div class="item" *ngFor="let list of lists">
         <div class="columns">
           <div class="title">
             {{ list.name }}
           </div>
-          <ol class="list fancy-scrollbar">
-            <li *ngFor="let card of list.cards">
+          <div class="list fancy-scrollbar">
             <app-card
+             *ngFor="let card of list.cards"
             [list]="list"
             [card]="card"
             class="card"
             ></app-card>
-            </li>
             <app-card-form [list]="list" class="card"></app-card-form>
-          </ol>
+          </div>
         </div>
-      </li>
-    </ol>
+      </div>
+    </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ElementRef, Directive } from '@angular/core';
+import { Component, OnInit, Input, Output, ElementRef, Directive } from '@angular/core';
 import { Card } from '../card';
 import { List } from '../list';
 
